@@ -1,0 +1,280 @@
+.sign-in-page {
+  min-height: calc(100vh - 180px);
+  background: #f0f1f3;
+  color: #242323;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.sign-in-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 74px;
+  padding: 18px 24px;
+  background: #fff;
+}
+
+.sign-in-header h1 {
+  margin: 0;
+  font-size: 17px;
+  letter-spacing: 0.5;
+  font-weight: 600;
+}
+
+.sign-in-header-actions button {
+  padding: 8px 0 8px 16px;
+  border: 0;
+  background: none;
+  color: #a91526;
+  cursor: pointer;
+  font: inherit;
+}
+
+.sign-in-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 26px;
+  width: min(100%, 1500px);
+  margin: 10px auto 0;
+  padding: 0 24px 24px;
+}
+
+.sign-in-benefits,
+.sign-in-panel {
+  min-width: 0;
+  min-height: 530px;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.sign-in-benefits {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.sign-in-image {
+  width: 100%;
+  height: 100%;
+  min-height: 530px;
+  object-fit: cover;
+}
+
+.sign-in-benefits-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 26px;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  line-height: 1.7;
+}
+
+.sign-in-benefits-copy > p {
+  margin: 0 0 30px;
+}
+
+.sign-in-benefits-copy h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.sign-in-benefits-copy strong {
+  margin-top: 3px;
+  font-size: 14px;
+}
+
+.sign-in-benefits-copy hr {
+  width: 100px;
+  margin: 34px 0;
+  border: 0;
+  border-top: 1px solid #999;
+}
+
+.sign-in-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px;
+}
+
+.sign-in-logo {
+  display: block;
+  width: 180px;
+  height: 86px;
+  margin: 0 auto 10px;
+  object-fit: contain;
+}
+
+.sign-in-intro {
+  margin: 0 0 36px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.sign-in-label {
+  margin: 0 0 20px;
+  font-size: 14px;
+}
+
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.sign-in-field {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sign-in-field label {
+  font-size: 13px;
+}
+
+.sign-in-field label span {
+  color: #b51c2b;
+}
+
+.sign-in-field input {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 10px;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+  color: inherit;
+  font: inherit;
+}
+
+.sign-in-field input:focus {
+  border-color: #a91526;
+  outline: 2px solid rgb(169 21 38 / 15%);
+}
+
+.sign-in-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.sign-in-forgot {
+  padding: 12px 4px;
+  border: 0;
+  background: none;
+  color: #b51c2b;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+}
+
+.sign-in-submit,
+.sign-in-create button {
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 4px;
+  background: #b51c2b;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sign-in-submit:hover,
+.sign-in-create button:hover {
+  background: #941522;
+}
+
+.sign-in-message {
+  margin: 14px 0 0;
+  color: #7d1622;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.sign-in-create {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  align-items: center;
+  margin-top: 42px;
+  padding: 24px 8px 0;
+  border-top: 1px solid #777;
+  text-align: center;
+}
+
+.sign-in-create p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .sign-in-content {
+    grid-template-columns: 1fr;
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 560px) {
+  .sign-in-header {
+    min-height: 62px;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 14px 16px;
+  }
+
+  .sign-in-header h1 {
+    font-size: 17px;
+  }
+
+  .sign-in-content {
+    gap: 14px;
+    margin-top: 8px;
+    padding: 0 12px 16px;
+  }
+
+  .sign-in-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .sign-in-image {
+    min-height: 220px;
+    max-height: 240px;
+  }
+
+  .sign-in-benefits-copy,
+  .sign-in-panel {
+    padding: 24px 18px;
+  }
+
+  .sign-in-benefits-copy hr {
+    margin: 20px 0;
+  }
+
+  .sign-in-fields,
+  .sign-in-actions,
+  .sign-in-create {
+    grid-template-columns: 1fr;
+  }
+
+  .sign-in-intro {
+    margin-bottom: 26px;
+  }
+
+  .sign-in-create {
+    margin-top: 28px;
+  }
+}
